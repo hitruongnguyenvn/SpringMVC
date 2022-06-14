@@ -1,0 +1,9 @@
+package com.unknown.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.unknown.entity.NewsEntity;
+
+public interface INewsRepository extends JpaRepository<NewsEntity, Integer> {
+
+}

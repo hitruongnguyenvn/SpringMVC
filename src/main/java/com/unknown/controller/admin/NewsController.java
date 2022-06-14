@@ -21,12 +21,12 @@ public class NewsController {
 	@RequestMapping(value = "/admin/news/list", method = RequestMethod.GET)
 	public ModelAndView showAll(@ModelAttribute("model") News news) {
 		ModelAndView modelAndView = new ModelAndView("admin/news/list");
-		IPageable pageable = new PageRequest(news.getPage(), news.getMaxPageItem(), null);
+		/*IPageable pageable = new PageRequest(news.getPage(), news.getMaxPageItem(), null);
 		int totalItem = newsService.getTotalItem();
 		Integer totalPage = (int) Math.ceil((double) totalItem / pageable.getFetchNextRows());
 		news.setTotalPage(totalPage);
 		news.setModels(newsService.findAll(pageable));
-		modelAndView.addObject("model", news);
+		modelAndView.addObject("model", news);*/
 		return modelAndView;
 	}
 }

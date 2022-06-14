@@ -13,4 +13,10 @@ public class HomeController {
 		ModelAndView modelAndView = new ModelAndView("web/home");
 		return modelAndView;
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public ModelAndView loginPage() {
+		ModelAndView modelAndView = new ModelAndView("login");
+		return modelAndView;
+	}
 }
